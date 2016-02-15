@@ -7,5 +7,5 @@ RUN apt-get update -qq -y &&\
     apt-get -qq -y install log-courier &&\
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ENTRYPOINT ["/usr/sbin/log-courier", "-config", "/etc/log-courier/log-courier.conf"]
+CMD ["/usr/sbin/log-courier", "-config", "/etc/log-courier/log-courier.conf"]
 
