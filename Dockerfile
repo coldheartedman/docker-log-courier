@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update -qq -y &&\
-    apt-get -qq -y install software-properties-common &&\
+    apt-get -qq -y install software-properties-common curl &&\
     add-apt-repository -y ppa:devel-k/log-courier &&\
     apt-get update -qq -y &&\
     apt-get -qq -y install log-courier &&\
